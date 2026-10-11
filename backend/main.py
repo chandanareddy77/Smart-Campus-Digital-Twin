@@ -12,8 +12,8 @@ from fastapi.responses import JSONResponse
 from .schemas import (BuildingRecordResponse, BuildingsResponse, BuildingType, ErrorResponse, HealthResponse,
                      ModelMetricsResponse, OverviewResponse, PredictRequest, PredictResponse, RootResponse,
                      TrendsResponse)
-from services import data_service, model_service
-from services.errors import ServiceError
+from .services import data_service, model_service
+from .services.errors import ServiceError
 
 VERSION = "1.0.0"
 ERRORS = {503: {"model": ErrorResponse}, 422: {"model": ErrorResponse}, 404: {"model": ErrorResponse}}
