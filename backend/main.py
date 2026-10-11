@@ -9,7 +9,7 @@ from fastapi.exceptions import RequestValidationError
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
-from schemas import (BuildingRecordResponse, BuildingsResponse, BuildingType, ErrorResponse, HealthResponse,
+from .schemas import (BuildingRecordResponse, BuildingsResponse, BuildingType, ErrorResponse, HealthResponse,
                      ModelMetricsResponse, OverviewResponse, PredictRequest, PredictResponse, RootResponse,
                      TrendsResponse)
 from services import data_service, model_service
