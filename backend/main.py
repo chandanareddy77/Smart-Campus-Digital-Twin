@@ -21,9 +21,8 @@ ERRORS = {503: {"model": ErrorResponse}, 422: {"model": ErrorResponse}, 404: {"m
 app = FastAPI(title="Smart Campus Digital Twin API", version=VERSION,
               description="Dataset analytics and ML electricity predictions (historical synthetic data, not live IoT).")
 
-origins = [o.strip() for o in os.getenv(
-    "CORS_ORIGINS", "http://localhost:5173,http://127.0.0.1:5173").split(",") if o.strip()]
-app.add_middleware(CORSMiddleware, allow_origins=origins, allow_methods=["GET", "POST"], allow_headers=["*"])
+origins = ["https://smart-campus-digital-twin-7r62h0spu-chandanareddy77.vercel.app",]
+app.add_middleware(CORSMiddleware, allow_credentials=True, allow_methods=[""], allow_headers=[""],)
 
 
 @app.exception_handler(ServiceError)
