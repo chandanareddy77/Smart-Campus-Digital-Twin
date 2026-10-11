@@ -1,0 +1,66 @@
+{
+  "data_source": "Synthetic dataset 07_smart_campus_digital_twin.csv",
+  "target": "Electricity_Consumption",
+  "target_unit": "kWh (assumed)",
+  "n_train": 400,
+  "n_test": 100,
+  "random_seed": 42,
+  "raw_features": [
+    "Building_Type",
+    "Hour",
+    "Occupancy",
+    "Temperature",
+    "Humidity",
+    "Lighting_Usage",
+    "AC_Usage",
+    "Computer_Usage",
+    "Water_Consumption",
+    "Waste_Generated",
+    "Year",
+    "Month",
+    "Day"
+  ],
+  "transformed_feature_count": 17,
+  "sklearn_version": "1.9.1",
+  "selection_metric": "test R\u00b2",
+  "best_model": "Linear Regression",
+  "selection_reason": "Highest test-set R\u00b2 (0.9120) of the four models, with the lowest or near-lowest MAE/RMSE; train R\u00b2 0.9264 vs 5-fold CV R\u00b2 0.9167 was checked for overfitting.",
+  "models": [
+    {
+      "model": "Linear Regression",
+      "mae": 39.22,
+      "rmse": 49.5065,
+      "r2": 0.911952,
+      "train_r2": 0.926377,
+      "cv_r2_mean": 0.916671,
+      "cv_r2_std": 0.013693
+    },
+    {
+      "model": "Decision Tree",
+      "mae": 65.292,
+      "rmse": 81.2814,
+      "r2": 0.762655,
+      "train_r2": 1.0,
+      "cv_r2_mean": 0.750463,
+      "cv_r2_std": 0.04581
+    },
+    {
+      "model": "Random Forest",
+      "mae": 42.7157,
+      "rmse": 54.006,
+      "r2": 0.895219,
+      "train_r2": 0.983997,
+      "cv_r2_mean": 0.877579,
+      "cv_r2_std": 0.025193
+    },
+    {
+      "model": "Gradient Boosting",
+      "mae": 42.6869,
+      "rmse": 54.2768,
+      "r2": 0.894166,
+      "train_r2": 0.975209,
+      "cv_r2_mean": 0.879773,
+      "cv_r2_std": 0.022933
+    }
+  ]
+}

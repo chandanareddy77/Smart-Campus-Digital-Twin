@@ -1,0 +1,143 @@
+{
+  "shape": [
+    500,
+    13
+  ],
+  "missing_values": 0,
+  "duplicates": 0,
+  "by_building_type": [
+    {
+      "Building_Type": "Administrative",
+      "count": 102,
+      "mean": 617.3,
+      "min": 178.9,
+      "max": 983.3
+    },
+    {
+      "Building_Type": "Classroom_Block",
+      "count": 101,
+      "mean": 596.8,
+      "min": 200.0,
+      "max": 1073.6
+    },
+    {
+      "Building_Type": "Hostel",
+      "count": 97,
+      "mean": 673.3,
+      "min": 295.7,
+      "max": 1063.1
+    },
+    {
+      "Building_Type": "Laboratory",
+      "count": 97,
+      "mean": 648.4,
+      "min": 146.5,
+      "max": 1041.4
+    },
+    {
+      "Building_Type": "Library",
+      "count": 103,
+      "mean": 651.2,
+      "min": 270.9,
+      "max": 1073.3
+    }
+  ],
+  "by_hour": [
+    {
+      "Hour": 6,
+      "count": 29,
+      "mean": 614.5
+    },
+    {
+      "Hour": 7,
+      "count": 28,
+      "mean": 674.6
+    },
+    {
+      "Hour": 8,
+      "count": 31,
+      "mean": 593.7
+    },
+    {
+      "Hour": 9,
+      "count": 21,
+      "mean": 663.0
+    },
+    {
+      "Hour": 10,
+      "count": 26,
+      "mean": 582.2
+    },
+    {
+      "Hour": 11,
+      "count": 25,
+      "mean": 640.7
+    },
+    {
+      "Hour": 12,
+      "count": 24,
+      "mean": 667.8
+    },
+    {
+      "Hour": 13,
+      "count": 34,
+      "mean": 596.9
+    },
+    {
+      "Hour": 14,
+      "count": 30,
+      "mean": 663.2
+    },
+    {
+      "Hour": 15,
+      "count": 36,
+      "mean": 677.2
+    },
+    {
+      "Hour": 16,
+      "count": 36,
+      "mean": 697.4
+    },
+    {
+      "Hour": 17,
+      "count": 28,
+      "mean": 627.8
+    },
+    {
+      "Hour": 18,
+      "count": 30,
+      "mean": 618.4
+    },
+    {
+      "Hour": 19,
+      "count": 32,
+      "mean": 660.9
+    },
+    {
+      "Hour": 20,
+      "count": 28,
+      "mean": 620.8
+    },
+    {
+      "Hour": 21,
+      "count": 26,
+      "mean": 610.4
+    },
+    {
+      "Hour": 22,
+      "count": 36,
+      "mean": 613.7
+    }
+  ],
+  "correlation_with_target": {
+    "Occupancy": 0.847,
+    "Lighting_Usage": 0.8,
+    "Water_Consumption": 0.789,
+    "Computer_Usage": 0.75,
+    "AC_Usage": 0.715,
+    "Waste_Generated": 0.687,
+    "Temperature": 0.307,
+    "Hour": 0.002,
+    "Humidity": -0.009
+  }
+}

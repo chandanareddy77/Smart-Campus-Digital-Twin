@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; }
+body { @apply bg-slate-50 text-slate-800 antialiased; font-family: Inter, system-ui, "Segoe UI", sans-serif; }
+
+@keyframes fade-up { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+.page-enter { animation: fade-up 0.35s ease-out both; }
+
+.card {
+  @apply rounded-2xl border border-slate-200/70 bg-white p-5 sm:p-6;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04), 0 8px 24px rgba(15, 23, 42, 0.04);
+}
+.card-title { @apply mb-4 text-sm font-semibold text-slate-900; }
+.label { @apply mb-1.5 block text-xs font-medium text-slate-500; }
+.input {
+  @apply w-full rounded-xl border border-slate-200 bg-white px-3 py-2.5 text-sm text-slate-800 transition
+         focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10;
+}
+.btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-xl bg-teal-600 px-5 py-2.5 text-sm font-semibold text-white
+         shadow-sm transition hover:bg-teal-700 focus:outline-none focus:ring-4 focus:ring-teal-500/20 disabled:cursor-not-allowed disabled:opacity-50;
+}
+.btn-secondary {
+  @apply inline-flex items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm font-medium
+         text-slate-700 transition hover:bg-slate-50 focus:outline-none focus:ring-4 focus:ring-slate-200/60;
+}
+.pill { @apply rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-600 transition hover:border-teal-300 hover:text-teal-700; }
+.pill-active { @apply rounded-full border border-teal-600 bg-teal-600 px-4 py-2 text-sm font-medium text-white shadow-sm; }
+
+input[type="number"] { -moz-appearance: textfield; }
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
